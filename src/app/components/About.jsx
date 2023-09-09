@@ -10,11 +10,11 @@ function About() {
         <div className="about">
           {" "}
           <span>About</span>
-          <p>s</p>
+          <p>.</p>
         </div>
-        <div className="about-name">Torque Engineering Works Pvt Ltd</div>
+        <div className="about-name">Torque - Engineering Works Pvt Ltd</div>
         <div className="about-info">
-          Torque Engineering Works Pvt Ltd provides the best Sales Service and Support in case of Marine & Industrial Works
+          Torque Engineering Works Pvt Ltd provides the best Sales Service and Support in case of Marine & Industrial Works which includes Ship Repair Hydraulics & All types of Grab works. We also supply the spare parts. Our serices are available 24 * 7.
         </div>
       </div>
     </section>
