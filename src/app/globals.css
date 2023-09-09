@@ -23,23 +23,19 @@ header {
   gap: 60px;
 }
 .navbar-button {
-  /* margin: 20px 0px; */
+  font-size: 18px;
+  font-family: var(--font-barlow);
   padding: 4px 0px;
   border-bottom: #000 solid 4px;
-  transform: translate(0px, 0px);
-  transform-origin: 20.2188px 23px;
 }
 .navbar-button:hover {
   border-bottom: #c41e3a solid 4px;
-  transform: translate3d(0px, 0px, 0px);
-  transform-origin: 20.2188px 23px;
 }
 .header-logo {
-  width: 100px;
+  width: 140px;
   height: 60px;
 }
 .heroPage-container {
-  background: url(/images/Heropage-img2.jpg) no-repeat center center;
   background-color: #000;
   background-size: cover;
   min-height: 100vh;
@@ -55,9 +51,10 @@ header {
   align-items: center;
 }
 .heroPage-tagline {
+  font-family: var(--font-ultra);
   max-width: 600px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   font-size: 44px;
 }
 .availability-container {
@@ -69,6 +66,7 @@ header {
   flex-direction: column;
   gap: 8px;
   margin-left: -12px;
+  font-family: var(--font-barlow);
 }
 
 .available {
@@ -146,15 +144,6 @@ header {
   background: #262626;
   border-radius: 100%;
 }
-/* .shadow {
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  left: 60px;
-  top: 60px;
-  transform: rotate(135deg);
-  background: linear-gradient(transparent, rgba(#000, 0.1));
-} */
 .hour {
   width: 3px;
   height: 100%;
@@ -223,6 +212,9 @@ header {
 .about-left {
   width: 50%;
 }
+.about-right {
+  width: 50%;
+}
 .about-image {
   width: 100%;
   padding: 70px 0px;
@@ -230,8 +222,9 @@ header {
   opacity: 0.5;
 }
 .about {
+  font-family: var(--font-barlow);
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 20px;
   margin-bottom: 80px;
   font-size: 20px;
@@ -241,11 +234,17 @@ header {
   background-color: #c41e3a;
   color: #c41e3a;
   width: 100%;
-  line-height: 1;
+  line-height: 0.8;
 }
 .about-name {
+  font-family: var(--font-ultra);
   max-width: 600px;
-  font-size: 40px;
+  font-size: 50px;
   margin-bottom: 50px;
   margin-left: -200px;
+}
+.about-info {
+  font-family: var(--font-stintUltra);
+  line-height: 1.5;
+  font-size: 20px;
 }

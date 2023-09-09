@@ -1,9 +1,9 @@
 import './globals.css'
-import { Ultra, Barlow } from 'next/font/google'
+import { Ultra, Barlow, Stint_Ultra_Expanded } from 'next/font/google'
 
-export const ultra = Ultra({weight: ["400"], subsets: ['latin'] })
+export const ultra = Ultra({weight: ["400"], subsets: ['latin'], variable: '--font-ultra' })
 export const barlow = Barlow({weight: ["400"], subsets: ['latin'],variable: '--font-barlow' })
-
+export const stintUltra = Stint_Ultra_Expanded({weight: ["400"], subsets: ['latin'],variable: '--font-stintUltra' })
 
 export const metadata = {
   title: 'Create Next App',
@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={ultra.className}>{children}</body>
+      <body className={`${ultra.variable} ${barlow.variable} ${stintUltra.variable}`}>{children}</body>
     </html>
   )
 }
