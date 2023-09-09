@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Logo from "../../../public/images/Logo.jpg";
 
-
-
 function Header() {
   return (
     <header>
@@ -11,7 +9,7 @@ function Header() {
           <a className="navbar-button">About</a>
           <a className="navbar-button">Services</a>
         </div>
-        <Image src={Logo} className="header-logo" />
+        <Image src={Logo} className="header-logo" alt="Logo of the company"/>
         <div className="navOptions-left">
           <a className="navbar-button">Enquire</a>
           <a className="navbar-button">Contact</a>

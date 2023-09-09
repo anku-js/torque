@@ -32,11 +32,10 @@ header {
   border-bottom: #c41e3a solid 4px;
 }
 .header-logo {
-  width: 100px;
+  width: 140px;
   height: 60px;
 }
 .heroPage-container {
-  background: url(../../public/images/Heropage-img2.jpg) no-repeat center center;
   background-color: #000;
   background-size: cover;
   min-height: 100vh;
@@ -235,7 +234,7 @@ header {
   background-color: #c41e3a;
   color: #c41e3a;
   width: 100%;
-  line-height: 0.6;
+  line-height: 0.8;
 }
 .about-name {
   font-family: var(--font-ultra);

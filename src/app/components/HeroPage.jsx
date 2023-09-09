@@ -1,7 +1,13 @@
 
+import Bg from "../../../public/images/HomePage-img2.jpg"
+
 function HeroPage() {
   return (
-    <section className="heroPage-container">
+    <section className="heroPage-container" style={{
+      backgroundImage: `url(${Bg.src})`,
+      width: '100%',
+      height: '100%',
+    }}>
       <div className="heroPage">
         <div className="heroPage-tagline">
           Providing the best Sales Service and Support
