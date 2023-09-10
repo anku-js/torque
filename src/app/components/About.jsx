@@ -1,5 +1,5 @@
 import Image from "next/image";
-import AboutImg from "../../../public/images/About-img.jpg";
+import AboutImg from "../../../public/images/engineer.png";
 function About() {
   return (
     <section className="about-container">
@@ -10,7 +10,7 @@ function About() {
         <div className="about">
           {" "}
           <span>About</span>
-          <p>.</p>
+          <p>-</p>
         </div>
         <div className="about-name">Torque - Engineering Works Pvt Ltd</div>
         <div className="about-info">

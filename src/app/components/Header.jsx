@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logo from "../../../public/images/Logo.jpg";
+import Logo from "../../../public/images/transparentLogo.png";
 
 function Header() {
   return (

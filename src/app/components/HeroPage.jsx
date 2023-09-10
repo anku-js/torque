@@ -1,34 +1,21 @@
-
-import Bg from "../../../public/images/HeroPage-img2.jpg"
-
+import Image from "next/image";
+import Bg from "../../../public/images/HeroPage-img3.jpg";
+import Engineer from "../../../public/images/eng.png"
 function HeroPage() {
   return (
-    <section className="heroPage-container" style={{
-      backgroundImage: `url(${Bg.src})`,
-      width: '100%',
-      height: '100%',
-    }}>
+    <section
+      className="heroPage-container"
+      style={{
+        backgroundImage: `url(${Bg.src})`,
+        width: "100%",
+        height: "100%",
+      }}
+    >
       <div className="heroPage">
         <div className="heroPage-tagline">
-          Providing the best Sales Service and Support
+          Providing the best Sales Service and Support.
         </div>
-        <div className="availability-container">
-          <div class="clock">
-            <div class="top"></div>
-            <div class="right"></div>
-            <div class="bottom"></div>
-            <div class="left"></div>
-            <div class="center"></div>
-            <div class="shadow"></div>
-            <div class="hour"></div>
-            <div class="minute"></div>
-            <div class="second"></div>
-          </div>
-          <div className="available-24">
-            <div className="available">Available</div>
-            <div className="available">24 * 7</div>
-          </div>
-        </div>
+        <div className="heroPage-tagline available">Available 24*7</div>
       </div>
     </section>
   );
