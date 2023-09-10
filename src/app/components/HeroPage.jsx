@@ -1,5 +1,5 @@
 
-import Bg from "../../../public/images/HomePage-img2.jpg"
+import Bg from "../../../public/images/HeroPage-img2.jpg"
 
 function HeroPage() {
   return (
