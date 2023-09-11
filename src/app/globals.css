@@ -52,7 +52,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-position: center;
 }
 .heroPage {
   position: relative;
@@ -270,6 +269,9 @@ header {
 
   .header-container {
     display: none;
+  }
+  .heroPage-container {
+    background-position: center;
   }
   .heroPage {
     padding: 40px 10px;
