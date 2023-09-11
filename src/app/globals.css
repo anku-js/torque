@@ -6,6 +6,8 @@
 header {
   background-color: #000;
   color: #fff;
+  /* position: relative;
+  z-index: 2; */
 }
 
 .header-container {
@@ -44,19 +46,37 @@ header {
   height: auto;
 }
 .heroPage-container {
+  position: relative;
   background-color: #2a2a2a;
   background-size: cover;
   min-height: 95vh;
-  /* opacity: 0.8; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .heroPage {
+  position: relative;
+  z-index: 2;
   width: 100%;
   padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
+  max-width: 600px;
+}
+.heroPage-top {
+  font-family: var(--font-poppins);
+  color: #f5dc4b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:10px
+}
+.shipWheel {
+  font-size: 40px;
 }
 .heroPage-tagline {
   font-family: var(--font-ultra);
@@ -64,13 +84,27 @@ header {
   text-align: center;
   font-size: 44px;
 }
-.availability-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.heroPage-yellowLine {
+  width: 40px;
+  background-color: #f5dc4b;
+  height: 4px;
 }
-.available {
-  color: #010138;
+.heroPage-summary {
+  font-family: var(--font-stintUltra);
+  color: #d7d5d5;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.overlay {
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  z-index: 1;
 }
 
 .about-container {

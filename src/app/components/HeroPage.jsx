@@ -1,6 +1,5 @@
-import Image from "next/image";
-import Bg from "../../../public/images/HeroPage-img3.jpg";
-import Engineer from "../../../public/images/eng.png"
+import Bg from "../../../public/images/heropage.jpg";
+import { GiShipWheel } from "react-icons/gi";
 
 function HeroPage() {
   return (
@@ -13,11 +12,21 @@ function HeroPage() {
       }}
     >
       <div className="heroPage">
-        <div className="heroPage-tagline">
-          Providing the best Sales Service and Support.
+        <div className="heroPage-top">
+          <GiShipWheel className="shipWheel" />
+          <p>THE BEST</p>
         </div>
-        <div className="heroPage-tagline available">Available 24*7</div>
+        <div className="heroPage-tagline">Sales Service and Support</div>
+        <div className="heroPage-yellowLine"></div>
+        <div  className="heroPage-summary">
+          Welcome to Torque Engineering Works Pvt Ltd , your trusted partner in
+          maritime excellence. Our experienced team of marine
+          engineers is dedicated to offer routine maintenance and complex repairs, we offer a
+          comprehensive range of services to keep your ships sailing smoothly.
+          We also provide spare parts.
+        </div>
       </div>
+      <div className="overlay"></div>
     </section>
   );
 }
