@@ -88,7 +88,7 @@ const initializeForm = () => {
             <video className={styles.video} autoPlay loop muted poster="/images/poster.jpg">
               <source src="/ship.mp4" type="video/mp4" />
             </video>
-            <p className={styles.info}>
+            <p className={styles.info + " " + ultra.className}>
               If you have any query, feel free to contact us.
             </p>
             <div className={styles.overlay}></div>
@@ -97,7 +97,7 @@ const initializeForm = () => {
           { !loading && !formSubmitted && (
             <form onSubmit={handleSubmit}>
               <div className={styles.formField}>
-                <label>Name</label>
+                <label className={ultra.className}>Name</label>
                 <input
                   required
                   type="text"
@@ -109,7 +109,7 @@ const initializeForm = () => {
                 />
               </div>
               <div className={styles.formField}>
-                <label>Email</label>
+                <label className={ultra.className}>Email</label>
                 <input
                   required
                   type="email"
@@ -121,7 +121,7 @@ const initializeForm = () => {
                 />
               </div>
               <div className={styles.formField}>
-                <label>Mobile Number</label>
+                <label className={ultra.className}>Mobile Number</label>
                 <input
                   required
                   type="tel"
@@ -133,7 +133,7 @@ const initializeForm = () => {
                 />
               </div>
               <div className={styles.formField}>
-                <label>Message (optional)</label>
+                <label className={ultra.className}>Message (optional)</label>
                 <textarea
                   rows="4"
                   name="message"
@@ -152,7 +152,7 @@ const initializeForm = () => {
               <div className={styles.icon}>
                 <img src="/images/success.png" alt="Success" />
               </div>
-              <p>{apiResponse}</p>
+              <p className={ultra.className}>{apiResponse}</p>
               <button type="button" className={styles.submitButton} onClick={initializeForm}>Submit a new form</button>
             </div>
           )}

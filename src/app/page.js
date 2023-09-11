@@ -1,4 +1,3 @@
-import Image from "next/image";
 import "./globals.css";
 import Header from "./components/Header";
 import HeroPage from "./components/HeroPage";
@@ -12,8 +11,7 @@ export default function Home() {
       <Header />
       <HeroPage />
       <About />
-      <Contact /> 
-      {/* <Loader /> */}
+      <Contact />
     </div>
   );
 }

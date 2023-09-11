@@ -14,9 +14,9 @@ function HeroPage() {
       <div className="heroPage">
         <div className="heroPage-top">
           <GiShipWheel className="shipWheel" />
-          <p>THE BEST</p>
+          <p className="callout-text">THE BEST</p>
         </div>
-        <div className="heroPage-tagline">Sales Service and Support</div>
+        <div className="heroPage-tagline">Sales Service <br />and Support</div>
         <div className="heroPage-yellowLine"></div>
         <div  className="heroPage-summary">
           Welcome to Torque Engineering Works Pvt Ltd , your trusted partner in
