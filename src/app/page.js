@@ -13,7 +13,7 @@ export default function Home() {
       <HeroPage />
       <About />
       <Contact /> 
-      <Loader />
+      {/* <Loader /> */}
     </div>
   );
 }
