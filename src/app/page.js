@@ -8,9 +8,9 @@ import Contact from "./components/Contact";
 export default function Home() {
   return (
     <div>
-      <Header />
+      {/* <Header />
       <HeroPage />
-      <About />
+      <About /> */}
       <Contact />
     </div>
   );
