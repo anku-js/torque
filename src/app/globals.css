@@ -240,7 +240,7 @@ header {
     align-items: center;
     justify-content: space-between;
     color: #fff;
-    padding: 0px 20px;
+    padding: 5px 20px;
   }
   .menu-button-container {
     display: flex;
@@ -253,6 +253,7 @@ header {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    z-index: 3;
   }
   #menu-toggle ~ .menu li {
     height: 0;
@@ -290,7 +291,7 @@ header {
     display: none;
   }
   .heroPage {
-    padding: 40px 0;
+    padding: 40px 10px;
   }
   .heroPage-tagline {
     font-size: 30px;
