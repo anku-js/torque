@@ -229,7 +229,7 @@ header {
     align-items: center;
     justify-content: space-between;
     color: #fff;
-    padding: 5px 20px;
+    padding: 10px 20px;
   }
   .menu-button-container {
     display: flex;
@@ -237,7 +237,7 @@ header {
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 50px;
+    margin-top: 60px;
     left: 0;
     flex-direction: column;
     width: 100%;
@@ -289,10 +289,11 @@ header {
   }
   .about-container {
     flex-direction: column-reverse;
-    padding: 40px 20px;
+    padding: 40px 10px;
     gap: 20px;
   }
   .about {
+    margin-top: -20px;
     margin-bottom: 30px;
   }
   .about-name {
