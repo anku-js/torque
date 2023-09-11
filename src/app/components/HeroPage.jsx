@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Bg from "../../../public/images/HeroPage-img3.jpg";
 import Engineer from "../../../public/images/eng.png"
+
 function HeroPage() {
   return (
     <section
