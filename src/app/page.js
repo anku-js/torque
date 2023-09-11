@@ -11,9 +11,9 @@ export default function Home() {
     <div>
       <Header />
       <HeroPage />
-      {/* <About />
-      <Contact /> */}
-      {/* <Loader /> */}
+      <About />
+      <Contact /> 
+      <Loader />
     </div>
   );
 }
