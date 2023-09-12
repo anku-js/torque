@@ -301,6 +301,7 @@ header {
     font-size: 36px;
   }
   .about-container {
+    height: fit-content;
     flex-direction: column-reverse;
     padding: 60px 10px;
     gap:20px;
