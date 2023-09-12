@@ -2,7 +2,7 @@ import Image from "next/image";
 import AboutImg from "../../../public/images/engineer.png";
 function About() {
   return (
-    <section className="about-container">
+    <section id="About" className="about-container">
       <div className="about-left">
         <Image src={AboutImg} className="about-image" alt="A hand holding a screw upwards" />
       </div>

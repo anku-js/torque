@@ -4,6 +4,7 @@ import { GiShipWheel } from "react-icons/gi";
 function HeroPage() {
   return (
     <section
+    id="Heropage"
       className="heroPage-container"
       style={{
         backgroundImage: `url(${Bg.src})`,

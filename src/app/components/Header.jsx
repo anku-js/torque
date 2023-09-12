@@ -4,12 +4,12 @@ import Logo from "../../../public/images/transparentLogo.png";
 function Header() {
   return (
     <header>
-      <div className="header-container">
+      <div id="Header" className="header-container">
         <div className="navOptions-left">
-          <a className="navbar-button">About</a>
-          <a className="navbar-button">Services</a>
+          <a href="#About" className="navbar-button">About</a>
+          <a href="#Services" className="navbar-button">Services</a>
         </div>
-        <Image src={Logo} className="header-logo" alt="Logo of the company" />
+        <a href="#Header"><Image src={Logo} className="header-logo" alt="Logo of the company" /></a>
         <div className="navOptions-left">
           <a className="navbar-button">Enquire</a>
           <a className="navbar-button">Contact</a>

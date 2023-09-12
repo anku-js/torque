@@ -1,0 +1,38 @@
+.services-container {
+    position: relative;
+    background-size: cover;
+    min-height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay {
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    z-index: 1;
+  }
+  .services {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 60px 150px;
+  }
+  .services-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .yellowLine-services {
+    width: 100%;
+    height: 10px;
+    background-color: #f5dc4b;
+  }
+  .services-heading {
+    color: #fff;
+    font-family: var(--font-poppins);
+  }
