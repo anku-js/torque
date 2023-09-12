@@ -92,4 +92,14 @@
   .contact-right {
     width: 100%;
   }
+  .contact-address-text,
+  .contact-timing-text {
+    font-size: 30px;
+  }
+  .contact-address,
+  .contact-timing-detail {
+    font-family: "Stint Ultra Expanded", serif;
+    font-size: 16px;
+    line-height: 2;
+  }
 }
