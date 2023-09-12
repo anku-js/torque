@@ -1,5 +1,6 @@
+import "./styles.css";
 import Image from "next/image";
-import Logo from "../../../public/images/Logo.png";
+import Logo from "../../../../public/images/Logo.png";
 
 function Header() {
   return (
@@ -25,7 +26,6 @@ function Header() {
           </a>
         </div>
       </div>
-      {/* <div> */}
       <section className="top-nav">
         <div>
           {" "}
@@ -56,7 +56,6 @@ function Header() {
           </li>
         </ul>
       </section>
-      {/* </div> */}
     </header>
   );
 }

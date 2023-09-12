@@ -1,5 +1,6 @@
-import Bg from "../../../public/images/heropage.jpg";
+import Bg from "../../../../public/images/heropage.jpg";
 import { GiShipWheel } from "react-icons/gi";
+import "./styles.css"
 
 function HeroPage() {
   return (
