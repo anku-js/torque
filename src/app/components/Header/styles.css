@@ -105,6 +105,9 @@ header {
 }
 
 @media screen and (max-width: 720px) {
+  .header-container {
+    display: none;
+  }
   .top-nav {
     display: flex;
     align-items: center;
