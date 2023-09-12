@@ -93,7 +93,7 @@ const Contact = () => {
   };
 
   return (
-    <div className={styles.fullScreenBackground}>
+    <div id="Enquire" className={styles.fullScreenBackground}>
       <div className={styles.modal}>
         <div className={styles.videoContainer}>
           <video

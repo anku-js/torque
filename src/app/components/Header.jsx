@@ -11,7 +11,7 @@ function Header() {
         </div>
         <a href="#Header"><Image src={Logo} className="header-logo" alt="Logo of the company" /></a>
         <div className="navOptions-left">
-          <a className="navbar-button">Enquire</a>
+          <a href="#Enquire" className="navbar-button">Enquire</a>
           <a className="navbar-button">Contact</a>
         </div>
       </div>

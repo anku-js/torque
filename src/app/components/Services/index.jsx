@@ -2,6 +2,7 @@ import ServicesImg from "../../../../public/images/Services.jpg";
 import "./styles.css";
 import { GiCargoShip, GiScubaTanks } from "react-icons/gi";
 import { FaTools, FaShippingFast } from "react-icons/fa";
+import {MdEngineering } from "react-icons/md";
 
 import { Ultra, Stint_Ultra_Expanded } from "next/font/google";
 
@@ -56,7 +57,7 @@ function Services() {
             </p>
           </div>
           <div className="services-list">
-            <GiScubaTanks className="service-icon" />
+            <MdEngineering className="service-icon" />
             <p className="service-name">HYDRAULICS AND FABRICATION WORKS</p>
             <p className="service-description">
               We assure Quality of fabrication using world class fabricators
