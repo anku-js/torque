@@ -14,8 +14,7 @@ function About() {
       </div>
       <div className="about-right">
         <div className="about">
-          {" "}
-          <span>About</span>
+          <p>About</p>
           <div className="about-yellowline"></div>
         </div>
         <div className="about-name">Torque - Engineering Works Pvt Ltd</div>
