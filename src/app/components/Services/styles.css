@@ -102,6 +102,9 @@
   .services {
     padding: 60px 0;
   }
+  .services-top {
+    padding: 0 20px;
+  }
   .services-middle {
     padding: 0 20px;
     margin-bottom: 40px;
