@@ -43,6 +43,7 @@
   font-size: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 40px;
 }
 .footer-navigation-buttons a {
@@ -61,4 +62,22 @@
 }
 .footer-icon {
   font-size: 30px;
+}
+
+@media screen and (max-width: 720px) {
+  .footer-middle {
+    padding: 0 10px;
+    /* gap: 40px; */
+  }
+  .footer-compName {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .footer-navigation-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-compSummary {
+    margin-bottom: 40px;
+  }
 }
