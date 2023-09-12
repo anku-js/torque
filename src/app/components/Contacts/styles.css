@@ -17,6 +17,8 @@
   border-radius: 20px 0 0 20px;
 }
 .map-image {
+  width: fit-content;
+  height: auto;
   border-radius: 20px 0 0 20px;
   padding: 40px;
   background-color: #f5dc4b;
@@ -48,10 +50,10 @@
   margin-bottom: 10px;
 }
 .address-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 .contact-timing-list {
   display: flex;
@@ -63,4 +65,26 @@
   font-family: "Stint Ultra Expanded", serif;
   font-size: 20px;
   line-height: 2;
+}
+
+@media screen and (max-width: 720px) {
+  .contact {
+    width: 100%;
+    padding: 60px 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 40px;
+  }
+  .contact-left {
+    width: 100%;
+  }
+  .map-image {
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+  }
+  .contact-right {
+    width: 100%;
+  }
 }
