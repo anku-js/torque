@@ -151,8 +151,8 @@ header {
 }
 .about p {
   display: block;
-  background-color: #c41e3a;
-  color: #c41e3a;
+  background-color: #f5dc4b;
+  color: #f5dc4b;
   width: 100%;
   line-height: 0.5;
 }
@@ -302,12 +302,14 @@ header {
   }
   .about-container {
     flex-direction: column-reverse;
-    padding: 40px 10px;
-    gap: 20px;
+    padding: 60px 10px;
+    gap:20px;
   }
   .about {
+    flex-direction: column;
+    gap: 0px;
     margin-top: -20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   .about-name {
     font-size: 30px;
