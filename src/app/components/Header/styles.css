@@ -23,7 +23,7 @@ header {
   transform-origin: 20.2188px 23px;
   transform: translate(0px, 0px);
   padding: 10px;
-  font-size: 20px;
+  font-size: 18px;
   font-family: var(--font-poppins);
   font-family: "Poppins", sans-serif;
   border-bottom: #000 solid 4px;
@@ -138,6 +138,12 @@ header {
     height: 2.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
+
+  #menu-toggle:checked ~ .menu li a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+  } 
   .menu > li {
     font-family: var(--font-poppins);
     display: flex;

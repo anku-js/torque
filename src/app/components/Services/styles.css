@@ -43,7 +43,8 @@
   background-color: #f5dc4b;
 }
 .services-heading {
-  font-size: 16px;
+  font-size: 18px;
+  letter-spacing: 1px;
   font-family: var(--font-poppins);
 }
 .services-middle {
@@ -87,7 +88,7 @@
 .service-name {
   font-family: var(--font-poppins);
   font-family: "Poppins", serif;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
 }
 .service-description {
@@ -95,7 +96,7 @@
   font-family: "Stint Ultra Expanded", serif;
   text-align: center;
   color: #b1adad;
-  line-height: 1.2;
+  line-height: 1.6;
 }
 
 @media screen and (max-width: 720px) {
