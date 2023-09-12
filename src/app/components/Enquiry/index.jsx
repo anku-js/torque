@@ -6,14 +6,18 @@ import styles from "./styles.module.scss";
 
 import { Ultra, Barlow } from "next/font/google";
 
-export const ultra = Ultra({ weight: ["400"], subsets: ["latin"], variable: '--font-ultra' });
+export const ultra = Ultra({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-ultra",
+});
 export const barlow = Barlow({
   weight: ["400"],
   subsets: ["latin"],
   variable: "--font-barlow",
 });
 
-const Contact = () => {
+const Enquiry = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [submissionError, setSubmissionError] = useState(false);
   const [apiResponse, setApiResponse] = useState("");
@@ -187,4 +191,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Enquiry;
