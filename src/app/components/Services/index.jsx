@@ -1,5 +1,20 @@
 import ServicesImg from "../../../../public/images/Services.jpg";
 import "./styles.css";
+import { GiCargoShip, GiScubaTanks } from "react-icons/gi";
+import { FaTools, FaShippingFast } from "react-icons/fa";
+
+import { Ultra, Stint_Ultra_Expanded } from "next/font/google";
+
+export const ultra = Ultra({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-ultra",
+});
+export const stintUltra = Stint_Ultra_Expanded({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-stintUltra",
+});
 
 function Services() {
   return (
@@ -15,34 +30,44 @@ function Services() {
       <div className="services">
         <div className="services-top">
           <div className="yellowLine-services"></div>
-          <div className="services-heading">Services</div>
+          <div className="services-heading">SERVICES</div>
           <div className="yellowLine-services"></div>
         </div>
         <div className="services-middle">
-          <div>Our Services</div>
-          <div>
+          <div className="our-services">Our Services</div>
+          <div className="services-summary">
             Torque Offers best repair services, spare parts and maintainance
             services. Here are some of the services we are famous for
           </div>
         </div>
         <div className="services-bottom">
-          <div>
-            <p>MARINE AND INDUSTRIAL WORKS</p>
-            <p>One of the most popular services our engineers provide</p>
+          <div className="services-list">
+            <GiCargoShip className="service-icon" />
+            <p className="service-name">MARINE AND INDUSTRIAL WORKS</p>
+            <p className="service-description">
+              One of the most popular services our engineers provide
+            </p>
           </div>
-          <div>
-            <p>SHIP REPAIR WORKS</p>
-            <p>Our Repair services will make your ship hail smoothly</p>
+          <div className="services-list">
+            <FaTools className="service-icon" />
+            <p className="service-name">SHIP REPAIR WORKS</p>
+            <p className="service-description">
+              Our Repair services will make your ship hail smoothly
+            </p>
           </div>
-          <div>
-            <p>HYDRAULICS AND FABRICATION WORKS</p>
-            <p>
+          <div className="services-list">
+            <GiScubaTanks className="service-icon" />
+            <p className="service-name">HYDRAULICS AND FABRICATION WORKS</p>
+            <p className="service-description">
               We assure Quality of fabrication using world class fabricators
             </p>
           </div>
-          <div>
-            <p>SPARE PART SUPPLIER</p>
-            <p>We supply Spare parts of original manufacturer quality</p>
+          <div className="services-list">
+            <FaShippingFast className="service-icon" />
+            <p className="service-name">SPARE PART SUPPLIER</p>
+            <p className="service-description">
+              We supply Spare parts of original manufacturer quality
+            </p>
           </div>
         </div>
       </div>

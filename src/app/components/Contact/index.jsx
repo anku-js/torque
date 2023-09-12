@@ -6,7 +6,7 @@ import styles from "./styles.module.scss";
 
 import { Ultra, Barlow } from "next/font/google";
 
-export const ultra = Ultra({ weight: ["400"], subsets: ["latin"] });
+export const ultra = Ultra({ weight: ["400"], subsets: ["latin"], variable: '--font-ultra' });
 export const barlow = Barlow({
   weight: ["400"],
   subsets: ["latin"],
