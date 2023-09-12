@@ -2,10 +2,9 @@ import "./globals.css";
 import Header from "./components/Header";
 import HeroPage from "./components/HeroPage";
 import About from "./components/About";
-import Contact from "./components/Contact";
-import Loader from "./components/Loader";
+import Enquiry from "./components/Enquiry";
 import Services from "./components/Services";
-
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -14,7 +13,8 @@ export default function Home() {
       <HeroPage />
       <About />
       <Services />
-      <Contact />
+      <Enquiry />
+      <Footer />
     </div>
   );
 }

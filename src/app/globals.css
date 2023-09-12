@@ -309,7 +309,7 @@ header {
   .about {
     flex-direction: column;
     gap: 0px;
-    margin-top: -20px;
+    margin-top: 0px;
     margin-bottom: 40px;
   }
   .about-name {
