@@ -1,6 +1,6 @@
 import ServicesImg from "../../../../public/images/Services.jpg";
 import "./styles.css";
-import { GiCargoShip, GiScubaTanks } from "react-icons/gi";
+import { GiCargoShip } from "react-icons/gi";
 import { FaTools, FaShippingFast } from "react-icons/fa";
 import {MdEngineering } from "react-icons/md";
 

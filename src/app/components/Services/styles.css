@@ -97,3 +97,18 @@
     color: #b1adad;
     line-height: 1.2;
   }
+
+  @media screen and (max-width:720px){
+    .services {
+      padding: 60px 0;
+    }
+    .services-middle {
+     padding: 0 20px;
+    }
+    .services-bottom {
+      flex-direction: column;
+      gap: 60px;
+      padding: 0 40px;
+    }
+
+  }
