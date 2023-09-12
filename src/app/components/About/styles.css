@@ -31,12 +31,10 @@
   margin-bottom: 80px;
   font-size: 24px;
 }
-.about p {
-  display: block;
+.about-yellowline {
   background-color: #f5dc4b;
-  color: #f5dc4b;
+  height: 12px;
   width: 100%;
-  line-height: 0.5;
 }
 .about-name {
   position: relative;
@@ -62,9 +60,9 @@
     gap: 40px;
   }
   .about {
-    flex-direction: column;
+    /* flex-direction: column;
     gap: 0px;
-    margin-top: 0px;
+    margin-top: 0px; */
     margin-bottom: 40px;
   }
   .about-name {

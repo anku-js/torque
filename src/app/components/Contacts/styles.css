@@ -76,6 +76,11 @@
     align-items: center;
     gap: 40px;
   }
+  /* .contact-text {
+    flex-direction: column;
+    gap: 0px;
+  } */
+
   .contact-left {
     width: 100%;
   }
