@@ -4,7 +4,7 @@ import HeroPage from "./components/HeroPage";
 import About from "./components/About";
 import Services from "./components/Services";
 import Enquiry from "./components/Enquiry";
-import Contact from "./components/Contacts";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 export default function Home() {

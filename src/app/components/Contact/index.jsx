@@ -1,7 +1,7 @@
 import "./styles.css";
-function Contacts() {
+function Contact() {
   return (
-    <section className="contact-container">
+    <section id="Contacts" className="contact-container">
       <div className="contact">
         <div className="contact-left">
           <div className="map-image">
@@ -16,7 +16,7 @@ function Contacts() {
         <div className="contact-right">
           <div className="contact-text">
             {" "}
-            <p>Contacts</p>
+            <p>Contact</p>
             <div className="contact-yellowline"></div>
           </div>
           <div className="contact-address-container">
@@ -50,4 +50,4 @@ function Contacts() {
     </section>
   );
 }
-export default Contacts;
+export default Contact;
