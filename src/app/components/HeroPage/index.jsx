@@ -1,10 +1,16 @@
 "use client";
+import React, { useEffect, useRef } from "react";
 import Bg from "../../../../public/images/heropage.jpg";
 import { GiShipWheel } from "react-icons/gi";
 import "./styles.css";
-import { Typewriter } from "react-simple-typewriter";
+// import { Typewriter } from "react-simple-typewriter";
+import Typewriter from "typewriter-effect";
 
 function HeroPage() {
+  var typewriter = new Typewriter("#heroPage-summary", {
+    loop: true,
+    delay: 75,
+  });
   return (
     <section
       id="Heropage"
@@ -26,18 +32,16 @@ function HeroPage() {
         </div>
         <div className="heroPage-yellowLine"></div>
         <div id="heroPage-summary" className="heroPage-summary">
-          <span style={{ fontWeight: "bold", color: "white" }}>
-            <Typewriter
-              words={[
-                "Welcome to Torque Engineering Works Pvt Ltd , your trusted partner in maritime excellence. Our experienced team of engineers are dedicated to offer a comprehensive range of services to keep your ships sailing smoothly. We also provide spare parts.",
-              ]}
-              loop={0}
-              cursor
-              cursorStyle="|"
-              typeSpeed={50}
-              // delaySpeed={1000}
-            />
-          </span>
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString(
+                  "Welcome to Torque Engineering Works Pvt Ltd , your trusted partner in maritime excellence. Our experienced team of engineers are dedicated to offer a comprehensive range of services to keep your ships sailing smoothly. We also provide spare parts."
+                )
+                .pauseFor(0)
+                .start();
+            }}
+          />
         </div>
       </div>
       <div className="overlay"></div>
