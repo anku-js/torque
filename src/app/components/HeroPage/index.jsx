@@ -32,16 +32,23 @@ function HeroPage() {
         </div>
         <div className="heroPage-yellowLine"></div>
         <div id="heroPage-summary" className="heroPage-summary">
+          Welcome to Torque Engineering Works Pvt Ltd , your trusted partner in
           <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-                .typeString(
-                  "Welcome to Torque Engineering Works Pvt Ltd , your trusted partner in maritime excellence. Our experienced team of engineers are dedicated to offer a comprehensive range of services to keep your ships sailing smoothly. We also provide spare parts."
-                )
-                .pauseFor(0)
-                .start();
+            options={{
+              strings: [
+                "Industrial works",
+                "maritime excellence",
+                "Grab works",
+              ],
+              autoStart: true,
+              loop: true,
+              pauseFor: 0,
+              wrapperClassName: "typewriter",
             }}
           />
+          . Our experienced team of engineers are dedicated to offer a
+          comprehensive range of services to keep your ships sailing smoothly.
+          We also provide spare parts.
         </div>
       </div>
       <div className="overlay"></div>

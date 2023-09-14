@@ -17,7 +17,7 @@
   width: 100%;
   padding: 50px 0px;
   height: auto;
-  opacity: 0.8;
+  /* opacity: 0.8; */
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .about {
@@ -48,6 +48,14 @@
   font-family: "Stint Ultra Expanded", serif;
   line-height: 1.5;
   font-size: 20px;
+  transform: translate3d(0, 100px, 0);
+  animation: come-in 0.8s ease forwards;
+}
+
+@keyframes come-in {
+  to {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 @media screen and (max-width: 720px) {

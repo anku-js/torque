@@ -68,6 +68,9 @@
   z-index: 1;
 }
 
+.typewriter {
+  color: #f5dc4b;
+}
 @media screen and (max-width: 720px) {
   .heroPage-container {
     background-position: center;
