@@ -1,5 +1,4 @@
-"use client";
-import React, { useEffect, useRef } from "react";
+"use client"
 import Bg from "../../../../public/images/heropage.jpg";
 import { GiShipWheel } from "react-icons/gi";
 import "./styles.css";
@@ -7,10 +6,6 @@ import "./styles.css";
 import Typewriter from "typewriter-effect";
 
 function HeroPage() {
-  var typewriter = new Typewriter("#heroPage-summary", {
-    loop: true,
-    delay: 75,
-  });
   return (
     <section
       id="Heropage"
@@ -46,7 +41,7 @@ function HeroPage() {
               wrapperClassName: "typewriter",
             }}
           />
-          . Our experienced team of engineers are dedicated to offer a
+          Our experienced team of engineers are dedicated to offer a
           comprehensive range of services to keep your ships sailing smoothly.
           We also provide spare parts.
         </div>
