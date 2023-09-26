@@ -17,6 +17,7 @@ header {
   display: flex;
   gap: 80px;
 }
+
 .navbar-button {
   color: #fff;
   text-decoration: none;
@@ -30,7 +31,6 @@ header {
   cursor: pointer;
 }
 .navbar-button:hover {
-  transform: translate3d(0px, 0px, 0px);
   color: #c41e3a;
   border-bottom: #c41e3a solid 4px;
 }
