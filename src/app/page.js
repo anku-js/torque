@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import HeroPage from "./components/HeroPage";
 import About from "./components/About";
 import Services from "./components/Services";
-import Enquiry from "./components/Enquiry";
+import Enquiry from "./components/Enquire";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 

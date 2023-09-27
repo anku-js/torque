@@ -97,7 +97,7 @@ const Enquiry = () => {
   };
 
   return (
-    <section id="Enquiry" className={styles.fullScreenBackground}>
+    <section id="Enquire" className={styles.fullScreenBackground}>
       <div className={styles.modal}>
         <div className={styles.videoContainer}>
           <video
