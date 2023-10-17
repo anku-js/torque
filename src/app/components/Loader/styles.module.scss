@@ -4,79 +4,79 @@
   align-items: center;
   padding: 30px;
 }
-  
-  .cometSpinner {
-    --radius: 1em;
-    --tracksize: 0.75em;
-    --degrees: 0deg;
+.cometSpinner {
+  --radius: 1em;
+  --tracksize: 0.75em;
+  --degrees: 0deg;
+  width: calc(var(--radius) * 2 + var(--tracksize));
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: var(--tracksize);
+  background: conic-gradient(
+    from var(--degrees),
+    #1bb8f7,
+    #f8509c calc(var(--degrees) + 140deg),
+    transparent calc(var(--degrees) + 210deg)
+  );
+  position: relative;
+  display: grid;
+  place-items: center;
+  animation: comet linear 1000ms infinite;
+  .inner-circle {
     width: calc(var(--radius) * 2 + var(--tracksize));
+    background-color: #f5f5f7;
+    position: absolute;
     aspect-ratio: 1;
     border-radius: 50%;
-    padding: var(--tracksize);
-    background: conic-gradient(from var(--degrees), #1BB8F7, #F8509C calc(var(--degrees) + 140deg), transparent calc(var(--degrees) + 210deg));
-    position: relative;
-    display: grid;
-    place-items: center;
-    animation: comet linear 1000ms infinite;
-    
-    .inner-circle {
-      width: calc(var(--radius) * 2 + var(--tracksize));
-      background-color: #f5f5f7;
-      position: absolute;
-      aspect-ratio: 1;
-      border-radius: 50%;
-    }
-    
-    .comet {
-      width: var(--tracksize);
-      height: var(--tracksize);
-      background-color: #1BB8F7;
-      position: absolute;
-      border-radius: 50%;
-      border: 2px solid #FFDC55;
-      z-index: 3;
-      left: calc((var(--tracksize) / 2));
-      top: 0;
-      margin: -2px;
-      translate: calc(cos(var(--degrees)) * var(--radius))
-                 calc(sin(var(--degrees)) * var(--radius));
-    }
   }
-  
-  @for $i from 0 through 7 {
-    .dot:nth-of-type(#{$i + 1}){
-      --degrees: #{$i} * 360deg / 8;
-      transform: translate(
-        calc(cos(var(--degrees)) * 25px), 
-        calc(sin(var(--degrees)) * 25px));
-      animation-delay: calc(#{$i} * 100ms);
-    }
+  .comet {
+    width: var(--tracksize);
+    height: var(--tracksize);
+    background-color: #1bb8f7;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #ffdc55;
+    z-index: 3;
+    left: calc((var(--tracksize) / 2));
+    top: 0;
+    margin: -2px;
+    translate: calc(cos(var(--degrees)) * var(--radius))
+      calc(sin(var(--degrees)) * var(--radius));
   }
-  @for $j from 0 through 16 {
-    .rect:nth-of-type(#{$j}) {
-      --degrees: #{$j} * 360deg / 16;
-      transform: rotate(calc(var(--degrees))) translateX(25px);
-      animation-delay: calc(#{$j} * 50ms);
-    }
+}
+
+@for $i from 0 through 7 {
+  .dot:nth-of-type(#{$i + 1}) {
+    --degrees: #{$i} * 360deg / 8;
+    transform: translate(
+      calc(cos(var(--degrees)) * 25px),
+      calc(sin(var(--degrees)) * 25px)
+    );
+    animation-delay: calc(#{$i} * 100ms);
   }
-  
-  
-  @keyframes animate-in {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
+}
+@for $j from 0 through 16 {
+  .rect:nth-of-type(#{$j}) {
+    --degrees: #{$j} * 360deg / 16;
+    transform: rotate(calc(var(--degrees))) translateX(25px);
+    animation-delay: calc(#{$j} * 50ms);
   }
-  
-  @keyframes comet {
-    from {
-      transform: rotate(0deg)
-    }
-    to {
-      transform: rotate(-360deg);
-    }
+}
+
+@keyframes animate-in {
+  from {
+    opacity: 1;
   }
-  
-  
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes comet {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
